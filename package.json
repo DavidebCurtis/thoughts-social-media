@@ -1,0 +1,23 @@
+{
+  "name": "thoughts-social-media",
+  "version": "1.0.0",
+  "description": "Twitter like social media app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidebCurtis/thoughts-social-media.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidebCurtis/thoughts-social-media/issues"
+  },
+  "homepage": "https://github.com/DavidebCurtis/thoughts-social-media#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2"
+  }
+}
