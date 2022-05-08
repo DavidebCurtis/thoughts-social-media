@@ -1,25 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const ThoughtsSchema = new Schema({
-  thoughtText: {
-    type: String,
-    required: true,
-    minlength: 1,
-    maxlength: 128,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-    get: (createdAtVal) => dateFormat(createdAtVal),
-  },
-  username: {
-    type: String,
-    required: true,
-  },
-  reactions: [ReactionSchema],
-});
-
 const ReactionSchema = new Schema({
   reactionId: {
     type: Schema.Types.ObjectId,
@@ -39,6 +20,25 @@ const ReactionSchema = new Schema({
     default: Date.now,
     get: (createdAtVal) => dateFormat(createdAtVal),
   },
+});
+
+const ThoughtsSchema = new Schema({
+  thoughtText: {
+    type: String,
+    required: true,
+    minlength: 1,
+    maxlength: 128,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    get: (createdAtVal) => dateFormat(createdAtVal),
+  },
+  username: {
+    type: String,
+    required: true,
+  },
+  reactions: [ReactionSchema],
 });
 
 // Reaction count
