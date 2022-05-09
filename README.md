@@ -8,7 +8,7 @@ Thoughts is a social media platform for users to connect with friends and share 
 
 ### Check out the Demo here
 
-[![Demo Video](./assets/screenshot.png)](https://github.com/DavidebCurtis/thoughts-social-media)
+[![Demo Video](./assets/screenshot.png)](https://www.youtube.com/watch?v=mbxz4TIVuzA&t=5s)
 
 ## Table of Contents
 
